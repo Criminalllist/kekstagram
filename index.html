@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/nouislider/nouislider.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Кекстаграм</title>
   </head>
@@ -55,6 +56,7 @@
             <form
               class="img-upload__form"
               id="upload-select-image"
+              action="https://25.javascript.htmlacademy.pro/kekstagram"
               method="post"
               enctype="multipart/form-data"
               autocomplete="off"
@@ -90,7 +92,7 @@
                       <input
                         type="text"
                         class="scale__control scale__control--value"
-                        value="55%"
+                        value="100%"
                         title="Image Scale"
                         name="scale"
                         readonly
@@ -244,6 +246,7 @@
                       class="text__description"
                       name="description"
                       placeholder="Ваш комментарий..."
+                      maxlength="140"
                     ></textarea>
                   </fieldset>
 
@@ -462,7 +465,8 @@
         Загружаем...
       </div>
     </template>
-
+    <script src="/nouislider/nouislider.js"></script>
+    <script src="/node_modules/pristinejs/dist/pristine.min.js"></script>
     <script src="/js/main.js" type="module"></script>
   </body>
 </html>

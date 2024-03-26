@@ -63,7 +63,7 @@ const createComment = () => {
 
 const addComment = () => {
   const commentsList = [];
-  for (let i = 0; i < getRandomPositiveNumber(1, 5); i++) {
+  for (let i = 0; i < getRandomPositiveNumber(1, 11); i++) {
     commentsList[i] = createComment();
   }
   return commentsList;
